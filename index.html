@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐APP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 414px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, #2d1f3d, #432c5c);
+            min-height: 100vh;
+        }
+
+        .header {
+            padding: 20px;
+            background: rgba(89, 46, 131, 0.9);
+        }
+
+        .search-bar {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .search-bar input {
+            background: none;
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 5px;
+            outline: none;
+        }
+
+        .categories {
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .category {
+            padding: 8px 16px;
+            background: rgba(147, 112, 219, 0.3);
+            border-radius: 15px;
+            white-space: nowrap;
+        }
+
+        .featured {
+            padding: 20px;
+        }
+
+        .featured-card {
+            background: rgba(147, 112, 219, 0.2);
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .song-list {
+            padding: 20px;
+        }
+
+        .song-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: rgba(147, 112, 219, 0.1);
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .song-cover {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            margin-right: 15px;
+            background: #592e83;
+        }
+
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 414px;
+            background: rgba(89, 46, 131, 0.95);
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-item {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .nav-item.active {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>音乐</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="搜索音乐...">
+            </div>
+        </div>
+
+        <div class="categories">
+            <div class="category">推荐</div>
+            <div class="category">流行</div>
+            <div class="category">摇滚</div>
+            <div class="category">民谣</div>
+            <div class="category">电子</div>
+            <div class="category">古典</div>
+        </div>
+
+        <div class="featured">
+            <h2>今日推荐</h2>
+            <div class="featured-card">
+                <h3>每日精选歌单</h3>
+                <p>根据您的音乐品味精心推荐</p>
+            </div>
+        </div>
+
+        <div class="song-list">
+            <h2>热门歌曲</h2>
+            <div class="song-item">
+                <div class="song-cover"></div>
+                <div class="song-info">
+                    <h3>歌曲名称</h3>
+                    <p>歌手名称</p>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-cover"></div>
+                <div class="song-info">
+                    <h3>歌曲名称</h3>
+                    <p>歌手名称</p>
+                </div>
+            </div>
+            <div class="song-item">
+                <div class="song-cover"></div>
+                <div class="song-info">
+                    <h3>歌曲名称</h3>
+                    <p>歌手名称</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <div class="nav-item active">首页</div>
+            <div class="nav-item">发现</div>
+            <div class="nav-item">播放</div>
+            <div class="nav-item">我的</div>
+        </div>
+    </div>
+</body>
+</html> 
